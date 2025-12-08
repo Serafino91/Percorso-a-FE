@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
     <style>
-        #piedi-sicuri{
+        footer{
             border: 2px red solid;
             padding: 20px;
             margin: 40px;
             background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
         }
         section{
             border: 1px dashed darkblue;
             padding: 15px;
             margin-top: 30px;
             margin-bottom: 30px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
     <meta charset="UTF-8">
@@ -22,6 +31,11 @@
 <!--il mio nome da battaglia e' HACE-->
 <header>
     <h1> HACE </h1>
+    <nav>
+        <a>Home</a>
+        <a>About</a>
+        <a>Contatti</a>
+    </nav>
 </header>
 <main>
     <section>
@@ -38,7 +52,8 @@
         </p>
     </section>
 </main>
-<footer id="piedi-sicuri">
+
+<footer>
     Dojo Frontend 2025
 </footer>
 </body>

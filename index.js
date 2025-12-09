@@ -13,3 +13,20 @@ const verificaObiettivo = (numeroFE) => {
 console.log("\n1: "+ verificaObiettivo(1));
 console.log("\n-13: "+ verificaObiettivo(-13));
 console.log("\n5: "+ verificaObiettivo(5));
+
+const footerElement = document.querySelector('footer');
+const h1Element = document.getElementById('titolo-guerriero');
+
+
+function cambiaColore(){
+    footerElement.style.background = 'darkred'
+    footerElement.style.color = 'white'
+}
+
+function gestisciClick(){
+    h1Element.textContent = "HACE - Guerriero";
+    cambiaColore();
+    h1Element.removeEventListener('click',gestisciClick)
+}
+
+h1Element.addEventListener('click',gestisciClick);

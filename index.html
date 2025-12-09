@@ -23,6 +23,24 @@
             justify-content: space-between;
             align-items: center;
         }
+      #dojo-grid{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: min-content min-content;
+          gap: 20px
+      }
+      #chi-sono{
+          grid-column: 1;
+          grid-row: 1;
+      }
+      #obiettivi{
+          grid-column: 1;
+          grid-row: 2;
+      }
+      #strumenti{
+          grid-column: 2;
+          grid-row: 1 / span 2;
+      }
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -37,20 +55,24 @@
         <a>Contatti</a>
     </nav>
 </header>
-<main>
-    <section>
+<main id="dojo-grid">
+    <section id="chi-sono">
         <h2> Chi sono</h2>
         <p>
             sono un virgulto all'inizio
             del suo percorso a fe
         </p>
     </section>
-    <section>
+    <section id="obiettivi">
         <h2> Obiettivi</h2>
         <p>
             diventare il numero 1 in React
         </p>
     </section>
+    <aside id="strumenti">
+        <h2> Strumenti del guerriero </h2>
+        <p> pippo pallo mi serve del testo </p>
+    </aside>
 </main>
 
 <footer>
